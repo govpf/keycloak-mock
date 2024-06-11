@@ -1,6 +1,7 @@
 # Keycloak version
 ARG KEYCLOAK_VERSION=15.1.0
-FROM jboss/keycloak:${KEYCLOAK_VERSION}
+ARG REPOSITORY_USERNAME=jboss
+FROM ${REPOSITORY_USERNAME}/keycloak:${KEYCLOAK_VERSION}
 
 # Copy script do dowload config, extension, and theme
 RUN mkdir /tmp/local-realms # used to un-tar config
