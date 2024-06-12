@@ -1,5 +1,6 @@
 # Keycloak version
 ARG KEYCLOAK_VERSION=15.1.0
+# Docker Repository Username
 ARG REPOSITORY_USERNAME=jboss
 FROM ${REPOSITORY_USERNAME}/keycloak:${KEYCLOAK_VERSION}
 
