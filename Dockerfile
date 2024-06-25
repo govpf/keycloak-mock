@@ -1,7 +1,7 @@
 # Keycloak version
 ARG KEYCLOAK_VERSION=15.1.0
 # Docker Repository Username
-ARG REPOSITORY_USERNAME=jboss
+ARG REPOSITORY_USERNAME=govpf
 FROM ${REPOSITORY_USERNAME}/keycloak:${KEYCLOAK_VERSION}
 
 # Copy script do dowload config, extension, and theme
